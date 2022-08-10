@@ -10,7 +10,7 @@ public class Main {
 
         //Задание 2
         for (int i = 0; i < array1.length; i++) {
-            System.out.print(array1[i] + "");
+            System.out.print(array1[i]);
             if (i<array1.length-1) {
                 System.out.print(", ");
             }
@@ -18,7 +18,7 @@ public class Main {
         System.out.println();
 
         for (int i = 0; i < array2.length; i++) {
-            System.out.print(array2[i] + "");
+            System.out.print(array2[i]);
             if (i<array2.length-1) {
                 System.out.print(", ");
             }
@@ -26,7 +26,7 @@ public class Main {
         System.out.println();
 
         for (int i = 0; i < array3.length; i++) {
-            System.out.print(array3[i] + "");
+            System.out.print(array3[i]);
             if (i<array3.length-1) {
                 System.out.print(", ");
             }
@@ -34,25 +34,25 @@ public class Main {
         System.out.println();
 
     //Задание 3
-        for (int i = array1.length; i > 0; i--) {
-            System.out.print(array1[i-1] + "");
-            if (i>1) {
+        for (int i = array1.length-1; i >= 0; i--) {
+            System.out.print(array1[i]);
+            if (i>0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
 
-        for (int i = array2.length; i > 0; i--) {
-            System.out.print(array2[i-1] + "");
-            if (i>1) {
+        for (int i = array2.length-1; i >= 0; i--) {
+            System.out.print(array2[i]);
+            if (i>0) {
                 System.out.print(", ");
             }
         }
         System.out.println();
 
-        for (int i = array3.length; i > 0; i--) {
-            System.out.print(array3[i-1] + "");
-            if (i>1) {
+        for (int i = array3.length-1; i >= 0; i--) {
+            System.out.print(array3[i]);
+            if (i>0) {
                 System.out.print(", ");
             }
         }
@@ -60,12 +60,16 @@ public class Main {
 
         //Задание 4
         for (int i = 0; i < array1.length; i++) {
-            int EvenNumber = array1[i];
-            if (EvenNumber%2!=0){
-                EvenNumber = array1[i] + 1;
+            if (array1[i]%2!=0){
+                int evenNumber = array1[i];
+                evenNumber++;
+                array1[i] = evenNumber;
             }
-            System.out.println(EvenNumber);
+            System.out.println(array1[i]);
+
         }
+
+
     }
 
 
